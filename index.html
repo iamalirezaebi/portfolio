@@ -1,128 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <base href="https://iamalirezaebi.github.io/portfolio/">
+    <title>Alireza Ebrahimi - AI Freelancer Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alireza Ebrahimi - AI Freelancer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5deb3; /* Skin color */
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
             margin: 0;
             padding: 0;
-            color: #333;
         }
         .container {
             width: 80%;
-            margin: 0 auto;
+            margin: auto;
+            overflow: hidden;
             padding: 20px;
         }
         header {
-            text-align: center;
-            padding: 50px 0;
+            background: #1a1a1a;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0077be 3px solid;
         }
-        h1 {
-            margin: 0;
-            font-size: 3em;
-        }
-        nav {
-            text-align: center;
-            margin-top: 20px;
-        }
-        nav a {
-            margin: 0 15px;
+        header a {
+            color: #ffffff;
             text-decoration: none;
-            color: #333;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            overflow: hidden;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #0077be;
             font-weight: bold;
         }
-        section {
-            margin: 50px 0;
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
         }
-        .section-title {
-            font-size: 2em;
-            margin-bottom: 20px;
+        #showcase {
+            min-height: 400px;
+            background: url('https://iamalirezaebi.github.io/portfolio/me.jpg') no-repeat center center/cover; /* Updated background image */
             text-align: center;
+            color: #ffffff;
         }
-        .smooth-style {
-            transition: all 0.3s ease;
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
         }
-        .smooth-style:hover {
-            transform: scale(1.05);
+        #showcase p {
+            font-size: 20px;
+        }
+        .button {
+            display: inline-block;
+            font-size: 18px;
+            color: #ffffff;
+            background: #0077be;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        #about, #certificates, #experience, #contact {
+            padding: 15px;
+            background: #1e1e1e;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+        .certificate-box, .experience-box {
+            background: #2a2a2a;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .certificate-box img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            display: block;
+            margin: 10px 0;
         }
         footer {
+            padding: 20px;
+            margin-top: 20px;
+            color: #ffffff;
+            background-color: #0077be;
             text-align: center;
-            padding: 20px 0;
-            background-color: #333;
-            color: #fff;
-        }
-        img {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-            height: auto;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Alireza Ebrahimi</span> Portfolio</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="#about">About Me</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#experience">Experiences</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="showcase">
+        <div class="container">
             <h1>Alireza Ebrahimi</h1>
             <p>AI Freelancer with 2 years of experience</p>
-            <nav>
-                <a href="#about">About Me</a>
-                <a href="#certificates">Main Certificates</a>
-                <a href="#experiences">Experiences</a>
-                <a href="#contact">Contact</a>
-            </nav>
-        </header>
+            <a href="#contact" class="button">Get in Touch</a>
+        </div>
+    </section>
 
+    <div class="container">
         <section id="about">
-            <h2 class="section-title">About Me</h2>
-            <p class="smooth-style">Hey!, I'm Alireza Ebrahimi, a computer science student at the University of Zanjan, and an AI freelancer with 2 years of experience in the field. I specialize in artificial intelligence, machine learning, computer vision, and natural language processing projects. I am passionate about using AI and web technology to solve real-world problems and enhance business processes.</p>
+            <h2>About Me</h2>
+            <p>Hey! I'm Alireza Ebrahimi, a computer science student at the University of Zanjan, and an AI freelancer with 2 years of experience in the field. I specialize in artificial intelligence, machine learning, computer vision, and natural language processing projects. I am passionate about using AI and web technology to solve real-world problems and enhance business processes.</p>
         </section>
 
         <section id="certificates">
-            <h2 class="section-title">Main Certificates</h2>
-            <div class="smooth-style">
+            <h2>Main Certificates</h2>
+            <div class="certificate-box">
                 <h3>Machine Learning Specialization</h3>
-                <img src="image.jpg" alt="Machine Learning Specialization Certificate" width="500">
+                <p>Machine Learning Specialization Certificate</p>
                 <p>This certificate requires the completion of 3 machine learning courses on the Coursera online learning platform.</p>
+                <img src="image.jpg" alt="Machine Learning Specialization Certificate">
             </div>
-            <div class="smooth-style">
+            <div class="certificate-box">
                 <h3>Become a Data Analyst</h3>
-                <img src="image1.jpg" alt="Become a Data Analyst Certificate" width="500">
+                <p>Become a Data Analyst Certificate</p>
                 <p>This certificate requires the completion of approximately 17 data analytical courses on the LinkedIn Learning online platform.</p>
+                <img src="image1.jpg" alt="Become a Data Analyst Certificate">
             </div>
         </section>
 
-        <section id="experiences">
-          <h2 class="section-title">Experiences</h2>
-          <div class="smooth-style">
-              <h3>Freelancer at Ponisha (2022-now)</h3>
-              <p>Many AI-related and web design and backend projects are available on my GitHub.</p>
-          </div>
-          <div class="smooth-style">
-              <h3>Freelancer at Karlancer (2023-now)</h3>
-              <p>Many AI-related and web design and backend projects are available on my GitHub.</p>
-          </div>
-          <div class="smooth-style">
-              <h3>Intern Data Scientist at Irancell (2022-2022)</h3>
-              <p>This experience provided valuable hands-on projects and teamwork experience.</p>
-          </div>
-          <div class="smooth-style">
-              <h3>Translator at Irantypist (2020-2023)</h3>
-              <p>This remote work was my first step into larger-scale projects and helped me to understand basic work concepts.</p>
-          </div>
-      </section>
+        <section id="experience">
+            <h2>Experiences</h2>
+            <div class="experience-box">
+                <h3>Freelancer at Ponisha (2022-now)</h3>
+                <p>Many AI-related and web design and backend projects are available on my GitHub.</p>
+            </div>
+            <div class="experience-box">
+                <h3>Freelancer at Karlancer (2023-now)</h3>
+                <p>Many AI-related and web design and backend projects are available on my GitHub.</p>
+            </div>
+            <div class="experience-box">
+                <h3>Intern Data Scientist at Irancell (2022-2022)</h3>
+                <p>This experience provided valuable hands-on projects and teamwork experience.</p>
+            </div>
+            <div class="experience-box">
+                <h3>Translator at Irantypist (2020-2023)</h3>
+                <p>This remote work was my first step into larger-scale projects and helped me to understand basic work concepts.</p>
+            </div>
+        </section>
 
         <section id="contact">
-            <h2 class="section-title">Contact</h2>
-            <p class="smooth-style">Email: <a href="mailto:iamalirezaebi@gmail.com">iamalirezaebi@gmail.com</a></p>
-            <p class="smooth-style">GitHub: <a href="https://github.com/iamalirezaebi">github.com/iamalirezaebi</a></p>
-            <p class="smooth-style">LinkedIn: <a href="https://www.linkedin.com/in/iamalirezaebi/">linkedin.com/iamalirezaebi</a></p>
-            <p class="smooth-style">My portfolio website: <a href="https://iamalirezaebi.github.io/portfolio/">https://iamalirezaebi.github.io/portfolio/</a></p>
-        </section>
-
+            <h2>Contact</h2>
+            <p>Email: iamalirezaebi@gmail.com</p>
+            <p>GitHub: <a href="https://github.com/iamalirezaebi" target="_blank">github.com/iamalirezaebi</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/iamalirezaebi" target="_blank">linkedin.com/iamalirezaebi</a></p>
+            <p>My portfolio website: <a href="https://iamalirezaebi.github.io/portfolio" target="_blank">https://iamalirezaebi.github.io/portfolio</a></p
         <footer>
             &copy; 2024 Alireza Ebrahimi. All rights reserved.
         </footer>
